@@ -41,25 +41,3 @@ d-Parametre olarak iki polinom nesnesi alan ve bu polinomların eşitliğini kon
 e- Parametre olarak polinom ve bir int n değeri alan ve polinomun katsayılarını n kadar artıran bir mothod yazınız. f1(P= x^4 + 2x^2 + 5, n=2) -> yeni_ P= 2x^4 + 4x^2 + 7
 f- Parametre olarak polinom ve bir int n değeri alan ve polinomun sabit değerini n kadar artıran bir mothod yazınız. f2(P= x^4 + 2x^2 + 5, n=8) -> yeni_ P= x^4 + 2x^2 + 13
  
-
-ÖDEV 1 için Kaynaklar: 
-Chart kullanımı: https://www.youtube.com/watch?app=desktop&v=gqo2TGpCOlA 
-Örnek gridview kullanımı (dataGridView1 isimli bileşen arayüzden eklenmelidir):
-DataSet ds = new DataSet();
-DataTable dt = new DataTable();
-dt.Columns.Add(new DataColumn("ID", typeof(int)));
-dt.Columns.Add(new DataColumn("Name", typeof(string)));
-dt.Columns.Add(new DataColumn("Age", typeof(int)));
-DataRow dr = dt.NewRow();
-dr["ID"] = 1;
-dr["Name"] = "John";
-dr["Age"] = 25;
-dt.Rows.Add(dr);
-dr = dt.NewRow();
-dr["ID"] = 2;
-dr["Name"] = "Mary";
-dr["Age"] = 30;
-dt.Rows.Add(dr);
-ds.Tables.Add(dt);
-
-dataGridView1.DataSource = ds.Tables[0];
